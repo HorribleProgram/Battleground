@@ -1,0 +1,31 @@
+/*
+ * defaults.css
+ * Used by almost every web page on battlegrounds
+ * to set reasonable defaults.
+ */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-row {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.box {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.responsive-side-margin {
+  margin-right: 15%;
+  margin-left: 15%;
+}
