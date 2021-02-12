@@ -8,32 +8,57 @@
 
   <!-- Homegrown Stylesheets -->
   <link href="styles/defaults.css" rel="stylesheet">
-  <link href="styles/light-theme.css" rel="stylesheet" id="link-light-theme">
   <link href="styles/dark-theme.css" rel="stylesheet" id="link-dark-theme">
+  <link href="styles/light-theme.css" rel="stylesheet" id="link-light-theme">
   <link href="styles/user-theme.css" rel="stylesheet" id="link-user-theme">
 
   <title>Settings</title>
 </head>
 
 <body>
+  <!-- Header -->
+  <header class="header">
+    <div class="top-header">
+      
+    </div>
+
+    <div class="bottom-header">
+      
+    </div>
+  </header>
+
+  <!-- Main Contents -->
   <main class="responsive-side-margin">
     <div class="theme-chooser">
       <div class="flex-row">
         <div class="box1 box" id="box1">
-          <input type="radio" value="Light Theme" id="light-theme-input"></input>
-          <label for="light-theme-input">Light Theme</label>
+          <input type="radio" name="theme-choice" value="Light Theme" id="light-theme-input"></input>
+          <label for="light-theme-input">
+            <img src="images/light-theme.jpg" alt="light-theme-picture" class="settings-theme-img">
+          </label>
         </div>
+
         <div class="box2 box" id="box2">
-          <input type="radio" value="Dark Theme" id="dark-theme-input"></input>
-          <label for="dark-theme-input">Dark Theme</label>
+          <input type="radio" name="theme-choice" value="Dark Theme" id="dark-theme-input"></input>
+          <label for="dark-theme-input">
+            <img src="images/dark-theme.jpg" alt="dark-theme-picture" class="settings-theme-img">
+          </label>
         </div>
+
         <div class="box3 box" id="box3">
-          <input type="radio" value="User Theme" id="user-theme-input"></input>
-          <label for="user-theme-input">User Theme</label>
+          <input type="radio" name="theme-choice" value="User Theme" id="user-theme-input"></input>
+          <label for="user-theme-input">
+            <img src="images/user-theme.jpg" alt="user-theme-picture" class="settings-theme-img">
+          </label>
         </div>
       </div>
     </div>
   </main>
+
+  <!-- Footer -->
+  <footer>
+
+  </footer>
 </body>
 
 </html>

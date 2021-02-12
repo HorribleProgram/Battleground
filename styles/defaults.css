@@ -29,3 +29,36 @@ body, html {
   margin-right: 15%;
   margin-left: 15%;
 }
+
+main {
+  padding-top: 24px;
+}
+
+.settings-theme-img {
+  /* TODO -- Make width and height of images responsive */
+  height: 85px;
+  border-radius: 10%;
+}
+
+.top-header {
+  background-color: rgb(22, 27, 34, 0.75);
+  color: rgba(240, 246, 252, 0.7);
+  min-height: 50px;
+  padding: 11px 20px;
+}
+
+.bottom-header {
+  background-color: rgb(22, 27, 34, 0.25);
+  min-height: 35px;
+}
+
+input[name="theme-choice"] {
+  float: inline-end;
+  position: relative;
+  left: 10%;
+  top: 20%;
+}
+
+label {
+  position: relative;
+}
