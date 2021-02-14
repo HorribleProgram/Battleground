@@ -52,13 +52,17 @@ main {
   min-height: 35px;
 }
 
-input[name="theme-choice"] {
-  float: inline-end;
+input[name="theme-choice"]{
   position: relative;
-  left: 10%;
-  top: 20%;
+  top: 16px;
+  left: 105px;
 }
-
-label {
+.user-settings-text {
   position: relative;
+  /* TODO: implement responsiveness in top and right, use % instead of hardcoded pixels */
+
+  top: 15px;
+  right: 130px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 120%;
 }

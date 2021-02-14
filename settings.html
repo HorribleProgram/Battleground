@@ -11,7 +11,10 @@
   <link href="styles/dark-theme.css" rel="stylesheet" id="link-dark-theme">
   <link href="styles/light-theme.css" rel="stylesheet" id="link-light-theme">
   <link href="styles/user-theme.css" rel="stylesheet" id="link-user-theme">
+  <link rel="stylesheet" id="switcher-id" href="" type="text/css">
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
   <title>Settings</title>
 </head>
 
@@ -33,32 +36,39 @@
       <div class="flex-row">
         <div class="box1 box" id="box1">
           <input type="radio" name="theme-choice" value="Light Theme" id="light-theme-input"></input>
-          <label for="light-theme-input">
+          <label id="1" for="light-theme-input">
             <img src="images/light-theme.jpg" alt="light-theme-picture" class="settings-theme-img">
+            <span class="user-settings-text">Light Theme</span>
           </label>
         </div>
 
         <div class="box2 box" id="box2">
           <input type="radio" name="theme-choice" value="Dark Theme" id="dark-theme-input"></input>
-          <label for="dark-theme-input">
+          <label id="2" for="dark-theme-input">
             <img src="images/dark-theme.jpg" alt="dark-theme-picture" class="settings-theme-img">
+            <span class="user-settings-text">Dark Theme</span>
           </label>
         </div>
 
         <div class="box3 box" id="box3">
           <input type="radio" name="theme-choice" value="User Theme" id="user-theme-input"></input>
-          <label for="user-theme-input">
-            <img src="images/user-theme.jpg" alt="user-theme-picture" class="settings-theme-img">
+          <label id="3" for="user-theme-input">
+            <img src="images/user-theme.jpg" id="1" alt="user-theme-picture" class="settings-theme-img">
+            <span class="user-settings-text">User Theme</span>
           </label>
         </div>
       </div>
     </div>
+
+
   </main>
 
   <!-- Footer -->
   <footer>
 
   </footer>
+
+  <script src="scripts/toggletheme.js"></script>
 </body>
 
 </html>
