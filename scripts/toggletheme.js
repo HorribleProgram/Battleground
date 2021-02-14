@@ -7,7 +7,6 @@ const radioLightTheme = document.getElementById('light-theme-input');
 const radioDarkTheme = document.getElementById('dark-theme-input');
 const radioUserTheme = document.getElementById('user-theme-input');
 
-
 radioLightTheme.addEventListener('click',  (e) => {
   console.log(e);
   setTheme('styles/light-theme.css');

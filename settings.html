@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <!-- Homegrown Stylesheets -->
   <link href="styles/defaults.css" rel="stylesheet">
   <link href="styles/dark-theme.css" rel="stylesheet" id="link-dark-theme">
@@ -13,8 +15,11 @@
   <link href="styles/user-theme.css" rel="stylesheet" id="link-user-theme">
   <link rel="stylesheet" id="switcher-id" href="" type="text/css">
 
+
+  <!-- Stolen Stylesheets -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
   <title>Settings</title>
 </head>
 
@@ -22,46 +27,53 @@
   <!-- Header -->
   <header class="header">
     <div class="top-header">
-      
+
     </div>
 
     <div class="bottom-header">
-      
+
     </div>
   </header>
 
   <!-- Main Contents -->
-  <main class="responsive-side-margin">
-    <div class="theme-chooser">
-      <div class="flex-row">
-        <div class="box1 box" id="box1">
-          <input type="radio" name="theme-choice" value="Light Theme" id="light-theme-input"></input>
-          <label id="1" for="light-theme-input">
-            <img src="images/light-theme.jpg" alt="light-theme-picture" class="settings-theme-img">
-            <span class="user-settings-text">Light Theme</span>
-          </label>
-        </div>
-
-        <div class="box2 box" id="box2">
-          <input type="radio" name="theme-choice" value="Dark Theme" id="dark-theme-input"></input>
-          <label id="2" for="dark-theme-input">
-            <img src="images/dark-theme.jpg" alt="dark-theme-picture" class="settings-theme-img">
-            <span class="user-settings-text">Dark Theme</span>
-          </label>
-        </div>
-
-        <div class="box3 box" id="box3">
-          <input type="radio" name="theme-choice" value="User Theme" id="user-theme-input"></input>
-          <label id="3" for="user-theme-input">
-            <img src="images/user-theme.jpg" id="1" alt="user-theme-picture" class="settings-theme-img">
-            <span class="user-settings-text">User Theme</span>
-          </label>
-        </div>
-      </div>
+  <div class="theme-chooser responsive-side-margin flex-row">
+    <div class="box1 box col-4" id="box1">
+      <label id="1" for="light-theme-input">
+        <img src="images/light-theme.jpg" alt="light-theme-picture" class="settings-theme-img">
+      </label>
     </div>
 
+    <div class="box2 box col-4" id="box2">
+      <label id="2" for="dark-theme-input">
+        <img src="images/dark-theme.jpg" alt="dark-theme-picture" class="settings-theme-img">
+      </label>
+    </div>
 
-  </main>
+    <div class="box3 box col-4" id="box3">
+      <label id="3" for="user-theme-input">
+        <img src="images/user-theme.jpg" id="1" alt="user-theme-picture" class="settings-theme-img">
+      </label>
+    </div>
+  </div>
+
+
+  <div class="flex-row responsive-side-margin margin-top-5">
+    <div class="first col-4">
+      <span class="user-settings-text">Light Theme</span>
+      <input type="radio" name="theme-choice" value="Light Theme" id="light-theme-input"></input>
+    </div>
+
+    <div class="second col-4">
+      <span class="user-settings-text">Dark Theme</span>
+      <input type="radio" name="theme-choice" value="Dark Theme" id="dark-theme-input"></input>
+    </div>
+
+    <div class="third col-4">
+      <span class="user-settings-text">User Theme</span>
+      <input type="radio" name="theme-choice" value="User Theme" id="user-theme-input"></input>
+    </div>
+  </div>
+  </div>
 
   <!-- Footer -->
   <footer>
