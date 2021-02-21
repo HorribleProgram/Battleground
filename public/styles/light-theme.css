@@ -1,4 +1,4 @@
 body {
-  color: #222;
-  background: lightblue;
+  color: #222 !important;
+  background-color: lightblue !important;
 }

@@ -1,4 +1,4 @@
 body {
   color: #eee;
-  background: rgb(49, 118, 127);
+  background-color: rgb(49, 118, 127) !important;
 }

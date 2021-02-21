@@ -19,7 +19,7 @@
   <!-- Stolen Stylesheets -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
+  <link href="styles/css/bootstrap.min.css" rel="stylesheet">
   <title>Settings</title>
 </head>
 
@@ -36,51 +36,61 @@
   </header>
 
   <!-- Main Contents -->
-  <div class="theme-chooser responsive-side-margin flex-row">
-    <div class="box1 box col-4" id="box1">
-      <label id="1" for="light-theme-input">
-        <img src="images/light-theme.jpg" alt="light-theme-picture" class="settings-theme-img">
-      </label>
-    </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <ul class="list-group">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li>
+        </ul>
+      </div>
+      <div class="col-8 pt-4">
+        <div class="d-flex justify-content-around">
+          <div class="box1 box" id="box1">
+            <label id="1" for="light-theme-input">
+              <img src="images/light-theme.jpg" alt="light-theme-picture" class="settings-theme-img">
+            </label>
+          </div>
 
-    <div class="box2 box col-4" id="box2">
-      <label id="2" for="dark-theme-input">
-        <img src="images/dark-theme.jpg" alt="dark-theme-picture" class="settings-theme-img">
-      </label>
-    </div>
+          <div class="box2 box" id="box2">
+            <label id="2" for="dark-theme-input">
+              <img src="images/dark-theme.jpg" alt="dark-theme-picture" class="settings-theme-img">
+            </label>
+          </div>
 
-    <div class="box3 box col-4" id="box3">
-      <label id="3" for="user-theme-input">
-        <img src="images/user-theme.jpg" id="1" alt="user-theme-picture" class="settings-theme-img">
-      </label>
+          <div class="box3 box" id="box3">
+            <label id="3" for="user-theme-input">
+              <img src="images/user-theme.jpg" id="1" alt="user-theme-picture" class="settings-theme-img">
+            </label>
+          </div>
+        </div>
+          <div class="d-flex justify-content-around">
+            <div class="first">
+              <span class="user-settings-text">Light Theme</span>
+              <input type="radio" name="theme-choice" value="Light Theme" id="light-theme-input"></input>
+            </div>
+          <div class="second">
+            <span class="user-settings-text">Dark Theme</span>
+            <input type="radio" name="theme-choice" value="Dark Theme" id="dark-theme-input"></input>
+          </div>
+
+          <div class="third">
+            <span class="user-settings-text">User Theme</span>
+            <input type="radio" name="theme-choice" value="User Theme" id="user-theme-input"></input>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-
-  <div class="flex-row responsive-side-margin margin-top-5">
-    <div class="first col-4">
-      <span class="user-settings-text">Light Theme</span>
-      <input type="radio" name="theme-choice" value="Light Theme" id="light-theme-input"></input>
-    </div>
-
-    <div class="second col-4">
-      <span class="user-settings-text">Dark Theme</span>
-      <input type="radio" name="theme-choice" value="Dark Theme" id="dark-theme-input"></input>
-    </div>
-
-    <div class="third col-4">
-      <span class="user-settings-text">User Theme</span>
-      <input type="radio" name="theme-choice" value="User Theme" id="user-theme-input"></input>
-    </div>
-  </div>
-  </div>
-
   <!-- Footer -->
   <footer>
 
   </footer>
 
-  <script src="scripts/toggletheme.js"></script>
+  <script src="./scripts/toggletheme.js"></script>
 </body>
 
 </html>
