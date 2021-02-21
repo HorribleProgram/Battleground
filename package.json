@@ -4,12 +4,13 @@
     "express": "^4.17.1",
     "nodemon": "^2.0.7"
   },
-  "name": "Battleground",
+  "name": "battleground",
   "description": "_I *doubt* this will be a good idea, but I figured with the lack of such a thing, I think I'd at least have some fun with friends or w/e_",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server.js localhost 8080"
   },
   "repository": {
     "type": "git",
