@@ -1,4 +1,9 @@
 body {
   color: #eee;
-  background-color: #121212 !important;
+  background-color: #121212;
+}
+
+.list-group-item {
+  color: black;
+  min-height: 40px;
 }

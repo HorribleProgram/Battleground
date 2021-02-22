@@ -15,19 +15,8 @@ body, html {
   box-sizing: border-box;
 }
 
-.flex-row {
-  display: flex !important;
-  flex-direction: row !important;
-  justify-items: center;
-}
-
-main {
-  padding-top: 24px;
-}
-
 .settings-theme-img {
-  /* TODO -- Make width and height of images responsive */
-  height: 85px;
+
   border-radius: 10%;
 }
 
@@ -48,14 +37,18 @@ main {
   font-weight: 200;
 }
 
-.margin-top-5 {
-  margin-top: 2px;
-}
-
 .col-8 {
   background-color: lightgreen;
 }
 
 .col-4 {
   background-color: lightpink;
+}
+
+.box {
+  max-width: 100px;
+}
+
+.settings-theme-img {
+  width: 100%;
 }
