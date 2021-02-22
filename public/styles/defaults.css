@@ -37,18 +37,20 @@ body, html {
   font-weight: 200;
 }
 
-.col-8 {
-  background-color: lightgreen;
-}
-
-.col-4 {
-  background-color: lightpink;
-}
-
 .box {
   max-width: 100px;
 }
 
 .settings-theme-img {
   width: 100%;
+}
+
+.right-side-list {
+  list-style: none;
+}
+
+.right-side-list-item {
+  display: inline-block;
+  height: 100%;
+  line-height: 100%;
 }
